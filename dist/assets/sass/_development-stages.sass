@@ -1,0 +1,85 @@
+.development-stages
+    margin-bottom: 65px !important
+    .container
+        padding-top: 62px 
+    &__content
+        flex-wrap: wrap
+    &__title
+        text-align: center
+        margin-top: 0 
+    &__list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__item
+        max-width: 300px
+        width: 100%
+        margin-bottom: 52px
+        &-title
+            display: flex
+            margin: 25px 0
+            &-text
+                font-weight: 500
+                font-size: 17px
+                line-height: 132.6%
+                display: flex
+                align-items: center
+                color: $white-color
+        &-text
+            font-weight: 300
+            font-size: 15px
+            line-height: 150.6%
+            color: $white-color
+    &__button
+        padding: 52px 81px
+        max-height: 130px
+        font-weight: 500
+        font-size: 17px
+
+    .parent-ball,.parent-rocket,.parent-tag,.parent-setting
+        position: relative
+
+    &__img-1-1,&__img-4-2,&__img-6-3,&__img-7-4
+        position: absolute
+        z-index: 4
+    &__img-1-1
+        top: -50px
+        right: -10px
+    &__img-4-2
+        top: -80px
+        right: -10px
+    &__img-6-3
+        top: -60px
+        left: -15px
+    &__img-7-4
+        top: -90px
+        right: -40px
+    .hideBtn
+        display: none
+
+@media screen and (max-width: 1370px)
+    .development-stages
+        .container
+            padding: 62px 20px 
+@media screen and (max-width: 1060px)
+    .development-stages
+        &__content
+            margin: 60px 0 34px
+        &__list
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__button
+            max-width: 330px
+            width: 100%
+        .hideBtn
+            margin: 10px auto
+            display: flex
+            border: dotted 5px #eb5757
+            background-color: #ffffff41
+            padding: 5px 32px
+            a
+                color: $white-color
+                font-size: 20px
+
+                

@@ -17,18 +17,30 @@
         width: 100%
         display: flex
         align-items: center
-    &__list
+    &__footer
+        width: 100%
         display: flex
+        justify-content: space-between
+        align-items: center
+    &__list
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
     &__item
+        box-sizing: border-box
         max-width: 410px
         width: 100%
+        display: flex
+        flex-direction: column
         text-align: center
         align-items: center
         justify-content: center
-        background: #FFFFFF
-        box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.01), 0px 5px 3px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.09), 0px 0px 0px rgba(0, 0, 0, 0.09)
+        background: $white-color
+        box-shadow: 0px 0px 74px $main-color
         border-radius: 20px
-        padding: 38px 73px 66px
+        padding: 38px 40px 
+        height: 310px
         &-big
             margin: 0 30px
         &-small
@@ -43,17 +55,22 @@
             text-align: justify
             margin-bottom: 32px
             font-weight: 300
+        &-description
+            font-weight: 300
+            font-size: 15px
+            line-height: 132.6%
+            text-align: justify
         &-img
             margin-bottom: 27px
         &-button-group
+            width: 100%
             display: flex
             justify-content: space-around 
         &-button
             border: 1px solid rgba(0, 0, 0, 0.25)   
             border-radius: 54px
             padding: 10px 25px
-            a
-                color: #000
+            cursor: pointer
         &-title
             max-width: 264px
             width: 100%
@@ -82,7 +99,7 @@
             align-items: center
             margin-bottom: 40px
         &__item
-            max-width: 350px
+            max-width: 320px
             width: 100%
             padding: 27px 30px 38px
             text-align: center
@@ -90,6 +107,7 @@
             justify-content: center
             display: flex
             flex-direction: column
+            box-shadow: 0px 0px 44px $main-color
             &-big
                 margin: 0 10px
         &__title
@@ -98,16 +116,28 @@
         &__subtitle
             text-align: center
 
-@media screen and (max-width: 1040px)
+@media screen and (max-width: 1060px)
     .services
-        &__list
-            flex-direction: column
+        &__footer
+            max-width: 320px
+            width: 100%
             align-items: center
-            margin: 0 10px
+            margin: auto
+        &__list
+            flex-direction: row
         &__item
-            max-width: 270px
+            margin-bottom: 20px
+            box-shadow: none
+            &:last-child
+                margin-bottom: 0px
             &-big
                 margin: 15px  0 
             &-title
                 font-size: 20px
+        .slider     
+            &__counter
+                position: absolute
+                max-width: 320px
+                width: 100%
+                bottom: -50px
                 

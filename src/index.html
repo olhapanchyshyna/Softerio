@@ -9,18 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel=stylesheet href='./assets/css/style.min.css'>
+    <link rel=stylesheet href='./assets/css/animate.css'>
 </head>
 <body>
     <header class="header contact">
         <div class="container">
             <div class="contact__logo-parent">
                 <img class="contact__logo" src="./assets/img/logo/Group.svg" alt="logo">
-                <img src="./assets/img/icons/li_menu.svg" alt="menu" class="contact__icons-menu">
-                <img src="./assets/img/icons/li_close.svg" alt="close" class="contact__icons-close">
+                <div class="contact__wrapper_icon">
+                    <img src="./assets/img/icons/li_menu.svg" alt="menu" class="contact__icons-menu animate__animated">
+                    <img src="./assets/img/icons/li_close.svg" alt="close" class="contact__icons-close animate__animated">
+                </div>
             </div>
             
             <nav class="contact__menu">
-                <ul class="contact__list">
+                <ul class="contact__list animate__animated">
                     <li class="contact__item contact__item-active"><a href="#main">Главная</a></li>
                     <li class="contact__item"><a href="#tasks">О нас</a></li>
                     <li class="contact__item"><a href="#services">Наши услуги</a></li>
@@ -30,14 +33,14 @@
                     <li class="contact__item dsn"><a href="#">Вакансии</a></li>
                     <li class="contact__item burger-parent">
                         <a class="burger">Ещё</a>
-                        <ul class="contact__menu-link burger-menu">
+                        <ul class="'contact__menu-link' burger-menu">
 							<li><a href=#>Статьи</a></li>
 							<li><a href=#>Вакансии</a></li>
 						</ul>
                     </li>
                 </ul>
             </nav>
-            <div class="contact__information">
+            <div class="contact__information animate__animated">
                 <div class="contact__information-call">
                     <div class="contact__number">8 (499) 348-82-16</div>
                     <div class="contact__email">hello@softerio.ru</div>
@@ -66,11 +69,11 @@
                     <h1 class="first-screen__title title w">Разработка мобильных приложений и сервисов</h1>
                     <div class="first-screen__text">
                         <div class="first-screen__list rocket">
-                            <img src="./assets/img/first-screen/rocket.svg">
+                            <img src="./assets/img/first-screen/rocket.svg" class="animate__animated animate__fadeInLeft">
                             <div class="first-screen__item">Знаем, как решить вашу задачу оптимальным способом</div>
                         </div>
                         <div class="first-screen__list">
-                            <img src="./assets/img/first-screen/cup.svg">
+                            <img src="./assets/img/first-screen/cup.svg" class="animate__animated animate__fadeInLeft">
                             <div class="first-screen__item ">Подберем подходящее решение с учетом целей и возможностей</div>
                         </div>
                     </div>
@@ -81,60 +84,86 @@
                 </div>
                 <div class="first-screen__img">
                     <img src="./assets/img/first-screen/mobile.svg">
-                    <img src="./assets/img/icons/planet.svg" alt="planet" class="planet-first-screen">
-                    <img src="./assets/img/icons/planet.svg" alt="small planet" class="small-planet">
+                    <img src="./assets/img/icons/planet.svg" alt="planet" class="planet-first-screen animate__animated animate__bounce">
+                    <img src="./assets/img/icons/planet.svg" alt="small planet" class="small-planet animate__animated animate__bounce">
                 </div>
-                
+
             </div>
         </section>
 
         <!-- services -->
         <section class="services" id="services">
             <div class="container">
-                <img src="./assets/img/icons/ball-blure.svg" alt="ball" class="ball">
+                <img src="./assets/img/icons/ball-blure.svg" alt="ball" class="ball animate__animated animate__bounce">
                 <div class="services__header">
                     <h2 class="services__title title">Наши услуги</h2>
                     <div class="services__subtitle">Разработка мобильных приложений и веб-проектов для бизнеса и стартапов</div>
                 </div>
                 <div class="services__footer">
                     <div class="services__list">
-                        <div class="services__item services__item-small">
+                        <div class="services__item animate__animated">
                             <img src="./assets/img/services/services-phone.svg" alt="phone" class="services__item-img phone">
                             <div class="services__item-title">Разработка мобильных приложений</div>
-                            <div class="services__item-text">
+                            <div class="services__item-text animate__animated" data-text="1">
                                 <p>Разрабатываем сайты персонально под ваш бизнес. Анализируем рынок и целевую аудиторию в соответствии с задачами, которые вы хотите решить с помощью веб-сайта.</p>
                                 <p>Создаём web-сервисы для любого направления бизнеса: продажи, коммуникации, управление, серверную часть и API, гибкие административные инструменты для управления приложениями и сбора статистики.</p>
                                 <p> Вы получаете продукт, привлекательный для пользователей и функциональный для вас.</p>
-                            </div>
+                            </div> 
+                            <div class="services__item-text animate__animated" data-text="2">
+                                <p>Разрабатываем сайты персонально под ваш бизнес. Анализируем рынок и целевую аудиторию в соответствии с задачами, которые вы хотите решить с помощью веб-сайта.</p>
+                                <p>Создаём web-сервисы для любого направления бизнеса: продажи, коммуникации, управление, серверную часть и API, гибкие административные инструменты для управления приложениями и сбора статистики.</p>
+                                <p> Вы получаете продукт, привлекательный для пользователей и функциональный для вас.</p>
+                            </div> 
                             <div class="services__item-button-group">
-                                <div class="services__item-button"><a href="#">iOS</a></div>
-                                <div class="services__item-button"><a href="#">Android</a></div>
+                                <div class="services__item-button" data-index="1">iOS</div>
+                                <div class="services__item-button" data-index="2">Android</div>
                             </div>
                         </div>
-                        <div class="services__item services__item-big">
+                        <div class="services__item animate__animated">
                             <div class="services__item-big-header">
                                 <img src="./assets/img/services/services-google.svg" alt="google" class="services__item-img google">
                                 <div class="services__item-title">Web разработка</div>
                             </div>
-                            <div class="services__item-text">
+                            <div class="services__item-text animate__animated" data-text="3">
                                 <p>Разрабатываем сайты персонально под ваш бизнес. Анализируем рынок и целевую аудиторию в соответствии с задачами, которые вы хотите решить с помощью веб-сайта.</p>
                                 <p>Создаём web-сервисы для любого направления бизнеса: продажи, коммуникации, управление, серверную часть и API, гибкие административные инструменты для управления приложениями и сбора статистики.</p>
                                 <p> Вы получаете продукт, привлекательный для пользователей и функциональный для вас.</p>
-                            </div>
+                            </div> 
+                            <div class="services__item-text animate__animated" data-text="4">
+                                <p>Разрабатываем сайты персонально под ваш бизнес. Анализируем рынок и целевую аудиторию в соответствии с задачами, которые вы хотите решить с помощью веб-сайта.</p>
+                                <p>Создаём web-сервисы для любого направления бизнеса: продажи, коммуникации, управление, серверную часть и API, гибкие административные инструменты для управления приложениями и сбора статистики.</p>
+                                <p> Вы получаете продукт, привлекательный для пользователей и функциональный для вас.</p>
+                            </div> 
                             <div class="services__item-button-group">
-                                <div class="services__item-button"><a href="#">Frontend</a></div>
-                                <div class="services__item-button"><a href="#">Backend</a></div>
+                                <div class="services__item-button" data-index="3">Frontend</div>
+                                <div class="services__item-button" data-index="4">Backend</div>
                             </div>
                         </div>
-                        <div class="services__item services__item-small">
+                        <div class="services__item animate__animated">
                             <img src="./assets/img/services/services-group.svg" alt="group" class="services__item-img group">
                             <div class="services__item-title">Проектирование мобильного приложения</div>
+                            <div class="services__item-text animate__animated" data-text="5">
+                                <p>Разрабатываем сайты персонально под ваш бизнес. Анализируем рынок и целевую аудиторию в соответствии с задачами, которые вы хотите решить с помощью веб-сайта.</p>
+                                <p>Создаём web-сервисы для любого направления бизнеса: продажи, коммуникации, управление, серверную часть и API, гибкие административные инструменты для управления приложениями и сбора статистики.</p>
+                                <p> Вы получаете продукт, привлекательный для пользователей и функциональный для вас.</p>
+                            </div> 
+                            <div class="services__item-text animate__animated" data-text="6">
+                                <p>Разрабатываем сайты персонально под ваш бизнес. Анализируем рынок и целевую аудиторию в соответствии с задачами, которые вы хотите решить с помощью веб-сайта.</p>
+                                <p>Создаём web-сервисы для любого направления бизнеса: продажи, коммуникации, управление, серверную часть и API, гибкие административные инструменты для управления приложениями и сбора статистики.</p>
+                                <p> Вы получаете продукт, привлекательный для пользователей и функциональный для вас.</p>
+                            </div> 
                             <div class="services__item-button-group">
-                                <div class="services__item-button"><a href="#">Дизайн</a></div>
-                                <div class="services__item-button"><a href="#">ТЗ</a></div>
+                                <div class="services__item-button" data-index="5">Дизайн</div>
+                                <div class="services__item-button" data-index="6">ТЗ</div>
                             </div>
                         </div>
                     </div>
+                    <div class="slider__counter">
+                        <ul class="slider__indicators">
+                            <li data-slide-to="1" class="dot"></li>
+                            <li data-slide-to="2" class="dot"></li>
+                            <li data-slide-to="3" class="dot"></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -228,6 +257,7 @@
                             <div class="development-stages__item-text">Обеспечиваем полную техническую поддержку и сопровождение по всем вопросам, возникающим после развертывания.</div>
                             <img src="./assets/img/development-stages/development-stages-7-4.svg" alt="7-4" class="development-stages__img-7-4">
                         </div>
+                        <button class="hideBtn button"><a href="#">Больше</a></button>
                         <button class="development-stages__button button red"><a href="#">Оставить заявку</a></button>
                     </div>
                 </div>
@@ -245,89 +275,97 @@
                 </div>
                 <div class="price__footer">
                    <div class="price__list">
-                    <!-- 1 -->
-                    <div class="price__item parent-bookmark-blue">
-                        <img src="./assets/img/price/bookmark-blue.svg" alt="bookmark-blue" class="bookmark-blue">
-                        <div class="price__item-header">
-                            <img src="./assets/img/price/price-img-phone-normal.svg" class="price__item-header-img" alt="phone-normal">
-                            <div class="price__item-header-title">Типовой</div>
-                        </div>
-                        <div class="price__item-body">
-                            <div class="price__item-body-text">
-                                <div class="price__item-body-text-item">Каталог товаров или услуг</div>
-                                <div class="price__item-body-text-item">Сделать заказ</div>
-                                <div class="price__item-body-text-item">Новости и акции</div>
-                                <div class="price__item-body-text-item">Обратная связь</div>
-                                <div class="price__item-body-text-item">Контакты</div>
+                        <!-- 1 -->
+                        <div class="price__item parent-bookmark-blue">
+                            <img src="./assets/img/price/bookmark-blue.svg" alt="bookmark-blue" class="bookmark-blue">
+                            <div class="price__item-header">
+                                <img src="./assets/img/price/price-img-phone-normal.svg" class="price__item-header-img" alt="phone-normal">
+                                <div class="price__item-header-title">Типовой</div>
                             </div>
-                            <div class="price__item-body-img">
-                                <img src="./assets/img/price/check-blue.svg" alt="check-blue" class="price__item-body-img-item">
-                                <img src="./assets/img/price/check-blue.svg" alt="check-blue" class="price__item-body-img-item">
-                                <img src="./assets/img/price/check-blue.svg" alt="check-blue" class="price__item-body-img-item">
-                                <img src="./assets/img/price/check-blue.svg" alt="check-blue" class="price__item-body-img-item">
-                                <img src="./assets/img/price/check-blue.svg" alt="check-blue" class="price__item-body-img-item">
+                            <div class="price__item-body">
+                                <div class="price__item-body-text">
+                                    <div class="price__item-body-text-item">Каталог товаров или услуг</div>
+                                    <div class="price__item-body-text-item">Сделать заказ</div>
+                                    <div class="price__item-body-text-item">Новости и акции</div>
+                                    <div class="price__item-body-text-item">Обратная связь</div>
+                                    <div class="price__item-body-text-item">Контакты</div>
+                                </div>
+                                <div class="price__item-body-img">
+                                    <img src="./assets/img/price/check-blue.svg" alt="check-blue" class="price__item-body-img-item">
+                                    <img src="./assets/img/price/check-blue.svg" alt="check-blue" class="price__item-body-img-item">
+                                    <img src="./assets/img/price/check-blue.svg" alt="check-blue" class="price__item-body-img-item">
+                                    <img src="./assets/img/price/check-blue.svg" alt="check-blue" class="price__item-body-img-item">
+                                    <img src="./assets/img/price/check-blue.svg" alt="check-blue" class="price__item-body-img-item">
+                                </div>
+                            </div>
+                            <div class="price__item-footer">
+                                <div class="price__item-footer-price">1 000 000 руб.</div>
+                                <button class="price__item-footer-btn"><a href="">Заказать приложение</a></button>
                             </div>
                         </div>
-                        <div class="price__item-footer">
-                            <div class="price__item-footer-price">1 000 000 руб.</div>
-                            <button class="price__item-footer-btn"><a href="">Заказать приложение</a></button>
+                        <!-- 2 -->
+                        <div class="price__item parent-bookmark-dark-blue">
+                            <img src="./assets/img/price/bookmark-dark-blue.svg" alt="bookmark-dark-blue" class="bookmark-dark-blue">
+                            <div class="price__item-header">
+                                <img src="./assets/img/price/price-img-phone-business.svg" class="price__item-header-img" alt="phone-business">
+                                <div class="price__item-header-title">Бизнес</div>
+                            </div>
+                            <div class="price__item-body">
+                                <div class="price__item-body-text">
+                                    <div class="price__item-body-text-item">Программа лояльности</div>
+                                    <div class="price__item-body-text-item"> Push уведомления</div>
+                                    <div class="price__item-body-text-item">Серверная часть</div>
+                                    <div class="price__item-body-text-item">Панель управления</div>
+                                    <div class="price__item-body-text-item">Чаты</div>
+                                </div>
+                                <div class="price__item-body-img">
+                                    <img src="./assets/img/price/check-dark-blue.svg" alt="check-dark-blue" class="price__item-body-img-item">
+                                    <img src="./assets/img/price/check-dark-blue.svg" alt="check-dark-blue" class="price__item-body-img-item">
+                                    <img src="./assets/img/price/check-dark-blue.svg" alt="check-dark-blue" class="price__item-body-img-item">
+                                    <img src="./assets/img/price/check-dark-blue.svg" alt="check-dark-blue" class="price__item-body-img-item">
+                                    <img src="./assets/img/price/check-dark-blue.svg" alt="check-dark-blue" class="price__item-body-img-item">
+                                </div>
+                            </div>
+                            <div class="price__item-footer">
+                                <div class="price__item-footer-price">2 000 000 руб.</div>
+                                <button class="price__item-footer-btn"><a href="#">Заказать приложение</a></button>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="price__item parent-bookmark-red">
+                            <img src="./assets/img/price/bookmark-red.svg" alt="bookmark-red" class="bookmark-red">
+                            <div class="price__item-header">
+                                <img src="./assets/img/price/price-img-phone-custom.svg" class="price__item-header-img" alt="phone-custom">
+                                <div class="price__item-header-title">Кастом</div>
+                            </div>
+                            <div class="price__item-body">
+                                <div class="price__item-body-text">
+                                    <div class="price__item-body-text-item">Автоматизация бизнес-процессов</div>
+                                    <div class="price__item-body-text-item">Сложные интеграции</div>
+                                    <div class="price__item-body-text-item">Маркетплейс</div>
+                                    <div class="price__item-body-text-item">Корпоративные решения</div>
+                                    <div class="price__item-body-text-item">Smart TV, Kit, VR \ AR</div>
+                                </div>
+                                <div class="price__item-body-img">
+                                    <img src="./assets/img/price/check-red.svg" alt="check-red" class="price__item-body-img-item">
+                                    <img src="./assets/img/price/check-red.svg" alt="check-red" class="price__item-body-img-item">
+                                    <img src="./assets/img/price/check-red.svg" alt="check-red" class="price__item-body-img-item">
+                                    <img src="./assets/img/price/check-red.svg" alt="check-red" class="price__item-body-img-item">
+                                    <img src="./assets/img/price/check-red.svg" alt="check-red" class="price__item-body-img-item">
+                                </div>
+                            </div>
+                            <div class="price__item-footer">
+                                <div class="price__item-footer-price">3000 000 руб.</div>
+                                <button class="price__item-footer-btn"><a href="#">Заказать приложение</a></button>
+                            </div>
                         </div>
                     </div>
-                    <!-- 2 -->
-                    <div class="price__item parent-bookmark-dark-blue">
-                        <img src="./assets/img/price/bookmark-dark-blue.svg" alt="bookmark-dark-blue" class="bookmark-dark-blue">
-                        <div class="price__item-header">
-                            <img src="./assets/img/price/price-img-phone-business.svg" class="price__item-header-img" alt="phone-business">
-                            <div class="price__item-header-title">Бизнес</div>
-                        </div>
-                        <div class="price__item-body">
-                            <div class="price__item-body-text">
-                                <div class="price__item-body-text-item">Программа лояльности</div>
-                                <div class="price__item-body-text-item"> Push уведомления</div>
-                                <div class="price__item-body-text-item">Серверная часть</div>
-                                <div class="price__item-body-text-item">Панель управления</div>
-                                <div class="price__item-body-text-item">Чаты</div>
-                            </div>
-                            <div class="price__item-body-img">
-                                <img src="./assets/img/price/check-dark-blue.svg" alt="check-dark-blue" class="price__item-body-img-item">
-                                <img src="./assets/img/price/check-dark-blue.svg" alt="check-dark-blue" class="price__item-body-img-item">
-                                <img src="./assets/img/price/check-dark-blue.svg" alt="check-dark-blue" class="price__item-body-img-item">
-                                <img src="./assets/img/price/check-dark-blue.svg" alt="check-dark-blue" class="price__item-body-img-item">
-                                <img src="./assets/img/price/check-dark-blue.svg" alt="check-dark-blue" class="price__item-body-img-item">
-                            </div>
-                        </div>
-                        <div class="price__item-footer">
-                            <div class="price__item-footer-price">2 000 000 руб.</div>
-                            <button class="price__item-footer-btn"><a href="#">Заказать приложение</a></button>
-                        </div>
-                    </div>
-                    <!-- 3 -->
-                    <div class="price__item parent-bookmark-red">
-                        <img src="./assets/img/price/bookmark-red.svg" alt="bookmark-red" class="bookmark-red">
-                        <div class="price__item-header">
-                            <img src="./assets/img/price/price-img-phone-custom.svg" class="price__item-header-img" alt="phone-custom">
-                            <div class="price__item-header-title">Кастом</div>
-                        </div>
-                        <div class="price__item-body">
-                            <div class="price__item-body-text">
-                                <div class="price__item-body-text-item">Автоматизация бизнес-процессов</div>
-                                <div class="price__item-body-text-item">Сложные интеграции</div>
-                                <div class="price__item-body-text-item">Маркетплейс</div>
-                                <div class="price__item-body-text-item">Корпоративные решения</div>
-                                <div class="price__item-body-text-item">Smart TV, Kit, VR \ AR</div>
-                            </div>
-                            <div class="price__item-body-img">
-                                <img src="./assets/img/price/check-red.svg" alt="check-red" class="price__item-body-img-item">
-                                <img src="./assets/img/price/check-red.svg" alt="check-red" class="price__item-body-img-item">
-                                <img src="./assets/img/price/check-red.svg" alt="check-red" class="price__item-body-img-item">
-                                <img src="./assets/img/price/check-red.svg" alt="check-red" class="price__item-body-img-item">
-                                <img src="./assets/img/price/check-red.svg" alt="check-red" class="price__item-body-img-item">
-                            </div>
-                        </div>
-                        <div class="price__item-footer">
-                            <div class="price__item-footer-price">3000 000 руб.</div>
-                            <button class="price__item-footer-btn"><a href="#">Заказать приложение</a></button>
-                        </div>
+                    <div class="slider__counter">
+                        <ul class="slider__indicators">
+                            <li data-slide-to="1" class="dot"></li>
+                            <li data-slide-to="2" class="dot"></li>
+                            <li data-slide-to="3" class="dot"></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -412,11 +450,14 @@
                     <div class="order-application__contact">
                         <div class="order-application__footer-title">Контакты:</div>
                         <div class="order-application__contact-list">
-                            <input type="text" name="name" class="order-aplication__contact-item" placeholder="Имя">
-                            <input type="tel" name="number" class="order-aplication__contact-item" placeholder="Телефон">
-                            <textarea name=message class="order-aplication__contact-item message" placeholder="Комментарий"></textarea>
+                            <form action="#">
+                                <input require type="text" name="name" class="order-aplication__contact-item" placeholder="Имя">
+                                <input require type="tel" name="number" class="order-aplication__contact-item" placeholder="Телефон">
+                                <textarea name=message class="order-aplication__contact-item message" placeholder="Комментарий"></textarea>
+                                <button class="button order-application__contact-btn">Заказать обратный звонок</button>
+                            </form>
                         </div>
-                        <button class="order-application__contact-btn">Заказать обратный звонок</button>
+                       
                     </div>
                 </div>
             </div>
@@ -460,6 +501,6 @@
 
 
 
-    <script src="./js/assets/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

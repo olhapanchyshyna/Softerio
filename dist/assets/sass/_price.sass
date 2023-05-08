@@ -1,0 +1,154 @@
+.price
+    margin-bottom: 130px
+    .container
+        position: relative
+    &__header
+        margin-bottom: 56px
+    &__title
+        text-align: center
+        max-width: 940px
+        margin: 0 auto 39px
+        width: 100%
+    &__subtitle
+        max-width: 853px
+        width: 100%
+        font-weight: 300
+        font-size: 16px
+        line-height: 128.1%
+        text-align: center
+        color: rgba(0, 0, 0, 0.69)
+        margin: 0 auto 
+    &__footer
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__list
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__item
+        box-sizing: border-box
+        // display: flex
+        max-width: 410px
+        width: 100%
+        background: $white-color
+        box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.01), 0px 5px 3px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.09), 0px 0px 0px rgba(0, 0, 0, 0.09)
+        border-radius: 20px
+        padding: 36px 72px 44px
+        &-header
+            display: flex
+            justify-content: center
+            margin-bottom: 31px
+            &-img
+                margin-right: 19px
+            &-title
+                display: flex
+                align-items: flex-end
+                font-weight: 500
+                font-size: 22px
+                line-height: 128.1%
+                text-align: center
+                color: #000000
+        &-body
+            display: flex
+            justify-content: space-between
+            &-img
+                display: flex
+                flex-direction: column
+                &-item
+                    margin-bottom: 20px
+            &-text
+                max-width:  263px
+                &-item
+                    margin-bottom: 20px
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 128.1%
+        &-footer
+            display: flex
+            text-align: center
+            margin-top: 50px
+            flex-direction: column
+            &-price
+                font-weight: 500
+                font-size: 24px
+                line-height: 128.1%
+                text-align: center
+                color: #000000
+                margin-bottom: 13px
+            &-btn
+                font-weight: 500
+                font-size: 17px
+                line-height: 148.6%
+                display: flex
+                align-items: center
+                text-align: center
+                background: $white-color
+                box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.01), 0px 5px 3px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.09), 0px 0px 0px rgba(0, 0, 0, 0.09)
+                border-radius: 20px
+                border: 1px solid $main-color
+                padding: 24px 43px
+                a
+                    color: $main-color
+            &-btn:hover
+                a
+                    color: $white-color
+                background:  $main-color
+                border: 1px solid $main-color
+    .parent-bookmark-blue, .parent-bookmark-dark-blue,.parent-bookmark-red
+        position: relative
+    .bookmark-blue, .bookmark-dark-blue, .bookmark-red
+        position: absolute
+        top: 0
+        right: 73px
+    .planet-price
+        width: 100px
+        height: 100px
+        position: absolute
+        z-index: 11 
+        top: 50px
+        left: 0
+
+@media screen and (max-width: 1370px)
+    .price
+        .planet-price
+            display: none
+        &__item
+            max-width: 350px
+            padding: 36px 32px 20px
+
+@media screen and (max-width: 1060px)
+    .price
+        margin-bottom: 30px
+        .container
+            align-items: center
+            display: flex
+            flex-direction: column
+        &__header
+            max-width: 500px
+            margin-bottom: 32px
+        &__footer
+            max-width: 350px
+            // flex-direction: column
+            align-items: center
+        &__list
+            flex-direction: row
+        &__item
+            margin-bottom: 50px
+        &__title
+            margin-bottom: 20px
+        .slider     
+            &__counter
+                position: absolute
+                max-width: 350px
+                width: 100%
+                bottom: -20px
+        
+
+
+
+
+
+    

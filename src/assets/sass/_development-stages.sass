@@ -24,12 +24,12 @@
                 line-height: 132.6%
                 display: flex
                 align-items: center
-                color: #FFFFFF
+                color: $white-color
         &-text
             font-weight: 300
             font-size: 15px
             line-height: 150.6%
-            color: #FFFFFF
+            color: $white-color
     &__button
         padding: 52px 81px
         max-height: 130px
@@ -54,12 +54,14 @@
     &__img-7-4
         top: -90px
         right: -40px
+    .hideBtn
+        display: none
 
 @media screen and (max-width: 1370px)
     .development-stages
         .container
             padding: 62px 20px 
-@media screen and (max-width: 1040px)
+@media screen and (max-width: 1060px)
     .development-stages
         &__content
             margin: 60px 0 34px
@@ -70,5 +72,14 @@
         &__button
             max-width: 330px
             width: 100%
+        .hideBtn
+            margin: 10px auto
+            display: flex
+            border: dotted 5px #eb5757
+            background-color: #ffffff41
+            padding: 5px 32px
+            a
+                color: $white-color
+                font-size: 20px
 
                 
