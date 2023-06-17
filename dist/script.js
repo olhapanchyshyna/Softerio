@@ -125,33 +125,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function moreInformation() {
-  // window.addEventListener('resize', () => {
-
-  // });
-
+  window.addEventListener('resize', function () {
+    showInformation('.hideBtn', '.development-stages__item');
+  });
   function showInformation(btnSelector, itemsSelector) {
+    var btn = document.querySelector(btnSelector),
+      items = document.querySelectorAll(itemsSelector);
     if (window.innerWidth <= 1060) {
-      var btn = document.querySelector(btnSelector),
-        items = document.querySelectorAll(itemsSelector);
+      btn.style.display = 'flex';
       items.forEach(function (item) {
         item.style.display = 'none';
-        document.querySelector('.development-stages__button').style.display = 'none';
       });
       items[0].style.display = 'block';
       btn.addEventListener('click', function (e) {
         e.preventDefault();
         items.forEach(function (item) {
           item.style.display = 'block';
-          document.querySelector('.development-stages__button').style.display = 'block';
         });
         btn.style.display = 'none';
       });
+    } else {
+      items.forEach(function (item) {
+        item.style.display = 'block';
+      });
+      btn.style.display = 'none';
     }
-    // if(window.innerWidth >= 1061){
-    //     btn.style.display = 'none';
-    // }
   }
-
   showInformation('.hideBtn', '.development-stages__item');
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (moreInformation);
